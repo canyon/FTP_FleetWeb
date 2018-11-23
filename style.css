@@ -186,6 +186,12 @@ hr { display: none; }
 	width: 570px;
 }
 
+/* Help-img */
+.help-img {
+	width: 550px;
+	height: 350px;
+}
+
 /* Post */
 
 .post {
