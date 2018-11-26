@@ -5,11 +5,16 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<title>启航计算机协会FTP站</title>
 	<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+
+	<!-- using Bootstrap fold function -->
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
 	<div id="wrapper">
-
 		<div id="header-wrapper">
 			<div id="logo">
 				<h1><a href="#">FLEET FTP</a></h1>
@@ -34,29 +39,41 @@
 		<div id="page">
 			<div id="content">
 				<div class="post">
-					<h2 class="title">如何使用资源管理器访问FTP</h2>
-					<p class="date">13/04/16</p>
-					<div class="entry">
-						<p>打开我的电脑，在蓝色箭头处输入 ftp://202.118.80.34<br />
-							如果有用户名，输入 ftp://username:password@202.118.80.34</p>
-						<img class="help-img" src="images/help_01_win7.png" />
+					<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo_1">
+						<h2 class="title">如何使用资源管理器访问FTP</h2>
+						<p class="date">13/04/16</p>
+					</button>
+					<div id="demo_1" class="collapse in">
+						<div class="entry">
+							<p>打开我的电脑，在蓝色箭头处输入 ftp://202.118.80.34<br />
+								如果有用户名，输入 ftp://username:password@202.118.80.34</p>
+							<img class="help-img" src="images/help_01_win7.png" />
+						</div>
 					</div>
 				</div>
 				<div class="post">
-					<h2 class="title">如何使用Web浏览器访问FTP</h2>
-					<p class="date">13/04/16</p>
-					<div class="entry">
-						<p>在浏览器地址栏中输入 ftp://202.118.80.34 或者<a href="ftp://202.118.80.34">点击此链接进入</a> <br />
-							如果有用户名，请输入 ftp://username:password@202.118.80.34</p>
-						<img class="help-img" src="images/help_02_ie.jpg" />
+					<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo_2">
+						<h2 class="title">如何使用Web浏览器访问FTP</h2>
+						<p class="date">13/04/16</p>
+					</button>
+					<div id="demo_2" class="collapse in">
+						<div class="entry">
+							<p>在浏览器地址栏中输入 ftp://202.118.80.34 或者<a href="ftp://202.118.80.34">点击此链接进入</a> <br />
+								如果有用户名，请输入 ftp://username:password@202.118.80.34</p>
+							<img class="help-img" src="images/help_02_ie.jpg" />
+						</div>
 					</div>
 				</div>
 				<div class="post">
-					<h2 class="title">如何使用FTP软件访问FTP</h2>
-					<p class="date">13/04/16</p>
-					<div class="entry">
-						<p>匿名登录时只需在箭头1（主机名）处输入202.118.80.34，有用户名时分别在箭头2和箭头3处输入用户名与密码，点击快速链接即可。</p>
-						<img class="help-img" src="images/help_03_filezilla.png" />
+					<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo_3">
+						<h2 class="title">如何使用FTP软件访问FTP</h2>
+						<p class="date">13/04/16</p>
+					</button>
+					<div id="demo_3" class="collapse in">
+						<div class="entry">
+							<p>匿名登录时只需在箭头1（主机名）处输入202.118.80.34，有用户名时分别在箭头2和箭头3处输入用户名与密码，点击快速链接即可。</p>
+							<img class="help-img" src="images/help_03_filezilla.png" />
+						</div>
 					</div>
 				</div>
 			</div>
