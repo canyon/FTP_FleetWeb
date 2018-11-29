@@ -2,15 +2,360 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<title>启航计算机协会FTP站</title>
-	<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
-
 	<!-- using Bootstrap fold function -->
 	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
 	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- Bootstrap引用必须放置在最前方！ -->
 
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>启航计算机协会FTP站</title>
+	<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+
+	<style>
+		/*
+Thanks to Free CSS Templates
+*/
+
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #000000 url(images/img03.jpg) repeat-x left top;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #837669;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: normal;
+	color: #649632;
+}
+
+h1 { font-size: 44px; }
+
+h2 { 
+	font-size: 26px; 
+	width: 550px;
+}
+
+h3 { }
+
+p, ul, ol {
+	margin-top: 0;
+	line-height: 240%;
+	text-align: justify;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+ul, ol { }
+
+blockquote { }
+
+a { color: #000000; }
+
+a:hover { text-decoration: none; }
+
+a img {
+	border: none;
+}
+
+img.left {
+	float: left;
+	margin: 7px 30px 0 0;
+}
+
+img.right {
+	float: right;
+	margin: 7px 0 0 30px;
+}
+
+hr { display: none; }
+
+.list1 {
+}
+
+.list1 li {
+	float: left;
+	line-height: normal;
+}
+
+.list1 li img {
+	margin: 0 30px 30px 0;
+}
+
+.list1 li.alt img {
+	margin-right: 0;
+}
+
+#wrapper {
+	background: url(images/img06.jpg) repeat-x left bottom;
+}
+
+/* Header */
+
+#header-wrapper {
+	width: 880px;
+	margin: 0 auto;
+	border-left: 10px solid #FFFFFF;
+	border-right: 10px solid #FFFFFF;
+	border-top: 10px solid #FFFFFF;
+}
+
+#header {
+	width: 880px;
+	height: 76px;
+	margin: 0 auto;
+	background: #608F30 url(images/img02.jpg) no-repeat left top;
+}
+
+/* Menu */
+
+#menu {
+	float: left;
+	width: 540px;
+	height: 51px;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 25px 0 0 10px;
+	list-style: none;
+	line-height: normal;
+}
+
+#menu li {
+	display: block;
+	float: left;
+}
+
+#menu a {
+	display: block;
+	float: left;
+	margin-right: 17px;
+	padding: 5px 12px;
+	text-decoration: none;
+	font: 14px Georgia, "Times New Roman", Times, serif;
+	color: #FFFFFF;
+}
+
+#menu a:hover { text-decoration: underline; }
+
+#menu .current_page_item a {
+	color: #FFFFFF;
+}
+
+/* Page */
+
+#page {
+	width: 880px;
+	margin: 0 auto;
+	padding: 30px 20px 0px 20px;
+	background: #FFFFFF;
+	border-left: 10px solid #FFFFFF;
+	border-right: 10px solid #FFFFFF;
+	border-bottom: 10px solid #FFFFFF;
+}
+
+/** LOGO */
+
+#logo {
+	height: 180px;
+	background: url(images/img01.jpg) no-repeat left top;
+}
+
+#logo h1, #logo p {
+	float: left;
+	margin: 0;
+	padding: 0 0 0 20px;
+	line-height: normal;
+}
+
+#logo h1 { padding-top: 100px; }
+
+#logo h1 a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #454545;
+}
+
+#logo h1 a:hover { text-decoration: underline; }
+
+#logo p {
+	padding: 125px 0 0 15px;
+	font: italic 13px Georgia, "Times New Roman", Times, serif;
+	color: #FFFFFF;
+}
+
+#logo p a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#logo p a:hover { text-decoration: underline; }
+
+/* Content */
+
+#content {
+	float: left;
+	width: 570px;
+}
+
+/* Help-img */
+.help-img {
+	width: 550px;
+	height: 350px;
+}
+
+/* btn */
+.btn-primary {
+    color: #fff;
+    background-color: #fdfdfd;
+    border-color: #fff;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+    color: #fff;
+    background-color: white;
+    border-color: white;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: white;
+    border-color: white;
+}
+
+.btn {
+    padding: 0px;
+	margin: 0px;
+	border: 0px;
+	text-align: left;
+	border-radius: 50px;
+	border-color: #fff;
+}
+
+/* Post */
+
+.post {
+	margin-bottom: 25px;
+}
+
+.post .title {
+    height: 74px;
+    width: 570px;
+    margin: 0px;
+    padding: 19px 0px 2px 20px;
+    background: url(images/img07.jpg) no-repeat left top;
+    color: #000000;
+}
+
+.post .date {
+	float: right;
+	margin-top: -55px;
+	padding-right: 40px;
+	font-weight: bold;
+	font-size: 14px;
+	color: #333333;
+}
+
+.post .meta {
+	margin: -40px  0 3px 25px;
+	padding: 2px 30px 2px 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 10px;
+	color: #B6ACA2;
+}
+
+.post .meta a { color: #B6ACA2; }
+
+.post .entry {
+	padding: 25px 20px;
+}
+
+.post .links {
+	margin: 0 250px 0 0;
+	padding: 0 0 0 0px;
+}
+
+.post .links .comments {
+}
+
+.post .links .permalink {
+	padding-left: 17px;
+}
+
+/* Sidebar */
+
+#sidebar {
+	float: right;
+	width: 222px;
+}
+
+#sidebar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	line-height: normal;
+}
+
+#sidebar li {
+	margin-bottom: 10px;
+	padding: 0 0 20px 0px;
+}
+
+#sidebar li ul {
+	line-height: 200%;
+}
+
+#sidebar li li {
+	margin: 0;
+	padding: 0 20px;
+}
+
+#sidebar h2 {
+	height: 48px;
+	margin: 0 0 20px 0px;
+	padding: 15px 0 2px 20px;
+	background: url(images/img04.jpg) no-repeat left top;
+	font-size: 18px;
+	color: #FFFFFF;
+}
+
+
+#sidebar p {
+	line-height: 200%;
+}
+
+/* Footer */
+
+#footer {
+	width: 880px;
+	margin: 0 auto;
+	padding: 0;
+	background: #494336 url(images/img05.jpg) no-repeat left top;
+	border-left: 10px solid #FFFFFF;
+	border-right: 10px solid #FFFFFF;
+	border-bottom: 10px solid #FFFFFF;
+}
+
+#footer p {
+	margin: 0;
+	padding: 20px 0;
+	text-align: center;
+	line-height: normal;
+	color: #B5ADA5;
+}
+
+#footer a {
+	color: #B5ADA5;
+}
+
+	</style>
 </head>
 
 <body>
